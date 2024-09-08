@@ -5,36 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/myStyleSheet.css">
-    <title>More JavaScript</title>
+    <title>Countdown Timer</title>
 </head>
 <body>
     <div class="content">
-        
         <div>
-            <h1 class="main-title">A Simple To Do List</h1>
+            <h1 class="main-title">Countdown Timer</h1>
             <h2>by Samuel Juarez</h2>
         </div>
 
         <div class="formItems">
-            <input id="newItemTxt" type="text" placeholder="Enter a new to-do item">
-            <button id="newItemBtn" type="button">Add Item</button>
+            <input id="timeInput" type="number" placeholder="Enter time in seconds">
+            <button id="startTimerBtn" type="button">Start Timer</button>
         </div>
 
         <div class="toDo">
-            <div id="pending">
-                <h2>Pending Items</h2>
-                <ul aria-live="polite">
-                </ul>
-            </div>
-
-            <div id="completed">
-                <h2>Completed Items</h2>
-                <ul aria-live="polite">
-                </ul>
-            </div>
+            <h2>Time Remaining:</h2>
+            <div id="timerDisplay">00:00</div>
         </div>
-
     </div>
+
     <script src="scripts/myScripts.js"></script>
 </body>
 </html>
+
